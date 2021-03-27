@@ -1,4 +1,21 @@
-// your JavaScript goes here, you can delete this comment
+let todoList = [
+    {
+        todo : ["clone repo for starter code", "link css and java to html"],
+    },
+    {
+        status: ["complete", "started"]
+    }
+]
+
+let completedTodos = []
+
+for (select_object of todoList) {
+    if (select_object.status === "complete"){
+        completedTodos.push(select_object)
+    }
+}
+
+
 
 let todoList = [
     {
@@ -7,17 +24,6 @@ let todoList = [
     }
 ]
 
-let completedTodos = []
-
-for (select_object of todoList) {
-    new_array = select_object.status
-    if (new_array.includes("complete")){
-        completedTodos.push(select_object)
-    }
-}
-
-for (item of completedTodos){
-    const{todo} = item
-    console.log(todo)
-}
+joy = todoList[0]
+typeof(joy)
 
